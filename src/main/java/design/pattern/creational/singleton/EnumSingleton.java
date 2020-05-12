@@ -7,23 +7,8 @@ package design.pattern.creational.singleton;
  * @date 2019/04/03
  */
 public enum EnumSingleton {
-    // 实例
     INSTANCE;
+    public void method() {
 
-    private Object data = new Object();
-
-    public Object getData() {
-        return data;
-    }
-
-    public static EnumSingleton getInstance() {
-        return INSTANCE;
-    }
-
-    public static void main(String[] args) {
-        Object object1 = EnumSingleton.getInstance().getData();
-        Object object2 = EnumSingleton.getInstance().getData();
-        System.out.println(object1);
-        System.out.println(object2);
     }
 }
